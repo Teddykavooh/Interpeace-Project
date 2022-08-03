@@ -1,0 +1,15 @@
+.section {
+    background-color: rgb(202, 58, 58);
+    display: flex;
+    justify-content: space-around;
+}
+
+.section_content {
+    background-color: beige;
+    height: 40vh;
+    width: 40vw;
+    border: 1px solid blue;
+    box-sizing: border-box;
+    margin: 20px; 
+    text-align: center; 
+}
