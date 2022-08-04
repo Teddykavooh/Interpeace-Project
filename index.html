@@ -5,66 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="icon" href="/Resources/" type="image/icon type">
+    <link rel="icon" href="/Resources/drpdIcn.png" type="image/icon type">
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
     <div class="nav">
-        <div class="logo">Logo</div>
+        <div class="nav__logo">
+          <img title="logo" src="/Resources/logo.png">
+        </div>
         <div class="links">
             <div class="social-container">
               <ul class="social-icons">
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#" title="insta"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#" title="tweet"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#" title="linkd"><i class="fa fa-linkedin"></i></a></li>
                 <!-- <li><a href="#"><i class="fa fa-codepen"></i></a></li> -->
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" title="faceb"><i class="fa fa-facebook"></i></a></li>
               </ul>
               <a href="#" class="social-contact">Contact</a>
             </div>
             <ul class="lists">
-              
-                <li><a href="#">link</a></li>
-                <li><a href="#">link</a></li>
-                <li><a href="#">link</a></li>
-                <li><a href="#">link</a></li>
-                <li><a href="#">link</a></li>
+                <li class="lists__dropdown-btn">
+                  <a href="#">Who We Are<img src="/Resources/drpdIcn.png" class="drpd-icn"></i></a>
+                  <div class="lists__dropdown-content">
+                    <a href="#">About Us</a>
+                    <a href="#">Mission & Values</a>
+                    <a href="#">History</a>
+                  </div>
+                </li>
+                <li><a href="#">Our Work</a></li>
+                <li><a href="#">Our Approach</a></li>
+                <li><a href="#">Get Involved</a></li>
+                <li><a href="#">Resources</a></li>
             </ul>
-           
         </div>
-        
     </div>
     <br>
-    <div id="slideshow">
-        <div class="slideshow-container">
-
-            <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
-              <img src="/Resources/Raw/img_nature_wide.jpg" style="width:100%">
-              <div class="text">Caption Text</div>
-            </div>
-            
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img src="/Resources/Raw/img_snow_wide.jpg" style="width:100%">
-              <div class="text">Caption Two</div>
-            </div>
-            
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img src="/Resources/Raw/img_mountains_wide.jpg" style="width:100%">
-              <div class="text">Caption Three</div>
-            </div>
-            
-            </div>
-            <br>
-            
-            <div style="text-align:center">
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-            </div>
-            
+    <div class="slideshow">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img title="img1" src="/Resources/1.png" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img title="img2" src="/Resources/2.png" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img title="img3" src="/Resources/3.png" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
     </div>
     <br>
     <div class="section">
@@ -76,12 +76,12 @@
     <div class="footer">
         Footer
         <ul class="social-icons">
-          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a title="insta" href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a title="tweet" href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a title="linkd" href="#"><i class="fa fa-linkedin"></i></a></li>
           <!-- <li><a href="#"><i class="fa fa-codepen"></i></a></li> -->
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        </ul> 
+          <li><a title="faceb" href="#"><i class="fa fa-facebook"></i></a></li>
+        </ul>
     </div>
     <!-- JavaScript link -->
     <script src="myScript.js"></script>
