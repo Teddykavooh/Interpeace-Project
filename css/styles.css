@@ -223,7 +223,13 @@ img {
 /* Footer */
 .footer {
   background-color: olive;
-  height: 20vh;
+  height: 40vh;
   text-align: center; }
+
+.footerB {
+  background-color: black;
+  height: 10vh;
+  text-align: center;
+  color: white; }
 
 /* Social Media Buttons */
