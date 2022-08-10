@@ -3,3 +3,22 @@
     padding: 20px;
     color: #002DA0;
 }
+
+.unveil, .mandate, .values, .vision, .mission, .partners {
+    padding: 20px;
+    p {
+        padding: 10px;
+    }
+}
+
+.struc {
+    height: 70vh;
+    
+    img {
+        height: 60vh;
+        width: 40vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
