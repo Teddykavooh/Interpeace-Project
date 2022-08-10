@@ -154,12 +154,12 @@ h3, h4 {
 .section {
   background-color: #DCE2E6;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   height: 70vh; }
 
 .section_content {
   height: 50vh;
-  width: 50vh;
+  width: 70vh;
   box-sizing: border-box;
   margin: 20px;
   text-align: center; }
@@ -265,12 +265,75 @@ h3, h4 {
 .footer {
   background-color: #002B5C;
   height: 40vh;
-  text-align: center; }
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  color: white; }
 
 .footerB {
   background-color: black;
   height: 10vh;
   text-align: center;
-  color: white; }
+  color: white;
+  padding: 3vh; }
+
+.cards-f {
+  display: flex;
+  justify-content: space-evenly; }
+  .cards-f__item {
+    border-right-style: solid;
+    border-right: 2px, white;
+    padding-right: 5vw; }
+    .cards-f__item ul {
+      list-style-type: none; }
+    .cards-f__item a {
+      text-decoration: none;
+      color: white; }
+
+.social-group {
+  height: 20vh;
+  display: flex;
+  justify-content: space-around; }
+  .social-group img {
+    height: 100%;
+    width: 30vh; }
 
 /* Social Media Buttons */
+.social-icons-f {
+  list-style: none; }
+  .social-icons-f li {
+    display: inline-block;
+    margin: 0.15em;
+    position: relative;
+    font-size: 1.2em; }
+  .social-icons-f i {
+    color: #1977bf;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    transition: all 265ms ease-out; }
+  .social-icons-f a {
+    display: inline-block; }
+    .social-icons-f a:before {
+      transform: scale(1);
+      -ms-transform: scale(1);
+      -webkit-transform: scale(1);
+      content: " ";
+      width: 40px;
+      height: 40px;
+      display: block;
+      background-color: ivory;
+      transition: all 265ms ease-out; }
+    .social-icons-f a:hover:before {
+      transform: scale(0);
+      transition: all 265ms ease-in; }
+    .social-icons-f a:hover i {
+      transform: scale(2);
+      -ms-transform: scale(2);
+      -webkit-transform: scale(2);
+      color: #00B5F5;
+      background-color: white;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 265ms ease-in; }
