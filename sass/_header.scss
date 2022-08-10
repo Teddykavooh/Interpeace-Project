@@ -124,7 +124,7 @@ $gradient      : #00B5F5;
         color: #76CEF0;
         position: absolute;
         top: 6px;
-        left: 6px;
+        left: 7px;
         transition: all $timing ease-out;
     }
 
@@ -149,7 +149,7 @@ $gradient      : #00B5F5;
         }
         
         &:hover i {
-            @include transformScale(2.2);
+            @include transformScale(1.5);
             color: $iconColor;
             background: -webkit-linear-gradient(45deg, $iconColor, $accent);
             background-clip: text;
