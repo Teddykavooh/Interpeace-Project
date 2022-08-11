@@ -1,10 +1,13 @@
+$scroll-marg-size: 18.5vh;
 .intro {
+    scroll-margin-top: $scroll-marg-size;
     text-align: center;
     padding: 20px;
     color: #002DA0;
 }
 
 .unveil, .mandate, .values, .vision, .mission, .partners {
+    scroll-margin-top: $scroll-marg-size;
     padding: 20px;
     p {
         padding: 10px;
@@ -13,7 +16,7 @@
 
 .struc {
     height: 70vh;
-    
+    scroll-margin-top: $scroll-marg-size;
     img {
         height: 60vh;
         width: 40vw;
