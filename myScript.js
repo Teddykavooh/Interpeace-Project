@@ -46,3 +46,12 @@ function showSlides1(n) {
   slides[slideIndex1-1].style.display = "block";  
   dots[slideIndex1-1].className += " active";
 }
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "mylists") {
+    x.className += " responsive";
+  } else {
+    x.className = "mylists";
+  }
+}
