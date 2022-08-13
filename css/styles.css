@@ -93,6 +93,9 @@ h3, h4 {
 .l_link {
   right: 0; }
 
+input[type=checkbox] {
+  display: none; }
+
 .icon {
   display: none;
   color: #002d80;
@@ -159,19 +162,15 @@ h3, h4 {
   .icon {
     display: inline;
     margin-left: auto;
-    margin-right: 1vw; } }
-
-@media screen and (max-width: 800px) {
-  .lists.responsive {
-    position: relative; }
-  .lists.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0; }
-  .lists.responsive a {
-    float: none;
+    margin-right: 1vw; }
+  input[type=checkbox]:checked ~ .lists {
     display: block;
-    text-align: left; } }
+    background-color: #DCE2E6;
+    height: 100%;
+    text-align: left;
+    margin-left: auto; }
+  .lists__dropdown-content {
+    right: 0; } }
 
 @media screen and (max-width: 420px) {
   .nav {

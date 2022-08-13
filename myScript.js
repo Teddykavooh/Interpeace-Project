@@ -47,11 +47,11 @@ function showSlides1(n) {
   dots[slideIndex1-1].className += " active";
 }
 
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "mylists") {
-    x.className += " responsive";
-  } else {
-    x.className = "mylists";
-  }
-}
+// function myFunction() {
+//   var x = document.getElementById("mylists");
+//   if (x.className === "mylists") {
+//     x.className += " responsive";
+//   } else {
+//     x.className = "mylists";
+//   }
+// }

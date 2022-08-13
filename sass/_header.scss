@@ -86,6 +86,9 @@
 }
 
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+input[type=checkbox]{
+    display: none;
+}
 .icon {
     display: none;
     color: #002d80;
@@ -205,27 +208,40 @@ $gradient      : #00B5F5;
 
 @media screen and (max-width: 800px) {
     .lists {display: none;}
+
     .icon {
     //   float: right;
       display: inline;
       margin-left: auto;
       margin-right: 1vw;
     }
-  }
 
-@media screen and (max-width: 800px) {
-    .lists.responsive {position: relative;}
-    .lists.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
+    input[type=checkbox]:checked ~ .lists {
+        display: block;
+        background-color: #DCE2E6;
+        height: 100%;
+        text-align: left;
+        margin-left: auto;
     }
-    .lists.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
+
+    .lists__dropdown-content {
+        right: 0;
     }
 }
+
+// @media screen and (max-width: 800px) {
+//     .lists.responsive {position: relative;}
+//     .lists.responsive .icon {
+//       position: absolute;
+//       right: 0;
+//       top: 0;
+//     }
+//     .lists.responsive a {
+//       float: none;
+//       display: block;
+//       text-align: left;
+//     }
+// }
 
 @media screen and (max-width: 420px) {
     .nav {
