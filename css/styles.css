@@ -209,7 +209,8 @@ input[type=checkbox] {
 
 .struc {
   height: 70vh;
-  scroll-margin-top: 18.5vh; }
+  scroll-margin-top: 18.5vh;
+  padding: 20px; }
   .struc img {
     height: 60vh;
     width: 40vw;
