@@ -1,17 +1,50 @@
 $scroll-marg-size: 18.5vh;
 .intro {
-    scroll-margin-top: $scroll-marg-size;
-    text-align: center;
-    padding: 20px;
-    color: #002DA0;
+  //   background-color: aqua;
+  margin-top: 2em;
+
+  height: 80vh;
+  scroll-margin-top: $scroll-marg-size;
+  text-align: center;
+  padding: 80px;
+  color: #002da0;
+}
+.heading-primary {
+  color: #0065bd;
+  font-size: 40px;
+
+  padding: 15px;
+  // font-size: 1.6rem;
 }
 
-.unveil, .mandate, .values, .vision, .mission, .partners {
-    scroll-margin-top: $scroll-marg-size;
-    padding: 20px;
-    p {
-        padding: 10px;
-    }
+.paragraph {
+  padding: 13px;
+}
+
+// h1,
+// h2 {
+//   color:
+//   padding: 10px;
+// }
+
+// h3,
+// h4 {
+//   color: #0065bd;
+//   padding: 5px;
+//   text-shadow: 2px 2px 10px black;
+// }
+
+.unveil,
+.mandate,
+.values,
+.vision,
+.mission,
+.partners {
+  scroll-margin-top: $scroll-marg-size;
+  padding: 20px;
+  p {
+    padding: 10px;
+  }
 }
 
 .struc {

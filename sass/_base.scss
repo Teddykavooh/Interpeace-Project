@@ -1,5 +1,7 @@
 html {
-	scroll-behavior: smooth;
+  box-sizing: border-box;
+  // font-size: 62.5%; //1rem = 10px
+  scroll-behavior: smooth;
 }
 
 * {
@@ -9,16 +11,24 @@ html {
 }
 
 body {
-  background-color: #F8F9FA;
+  background-color: #f8f9fa;
   font-family: Verdana, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
-h1, h2 {
+// h1,
+// h2 {
+//   color: #0065bd;
+//   padding: 10px;
+// }
+h2 {
   color: #0065bd;
   padding: 10px;
 }
 
-h3, h4 {
+h3,
+h4 {
   color: #0065bd;
   padding: 5px;
   text-shadow: 2px 2px 10px black;
@@ -27,8 +37,8 @@ h3, h4 {
 /**
  * Disable smooth scrolling when users have prefers-reduced-motion enabled
  */
- @media screen and (prefers-reduced-motion: reduce) {
-	html {
-		scroll-behavior: auto;
-	}
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
