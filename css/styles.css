@@ -542,26 +542,33 @@ input[type="checkbox"] {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  color: white; }
+  color: white;
+  font-size: small; }
   .footer h3 {
     color: #f2bd21; }
 
 .footerB {
   background-color: black;
-  height: 10vh;
+  height: auto;
   text-align: center;
   color: white;
-  padding: 3vh; }
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  font-size: small; }
+  .footerB p {
+    margin: auto; }
 
 .cards-f {
   display: flex;
-  justify-content: space-evenly;
-  max-width: 1200px;
-  margin: auto;
-  gap: 2rem; }
+  justify-content: space-around;
+  width: 1200px;
+  margin: 3rem auto; }
   .cards-f ul {
     list-style-type: none;
     margin: auto; }
+  .cards-f li {
+    margin: 1rem; }
   .cards-f a {
     text-decoration: none;
     color: white; }
@@ -576,19 +583,21 @@ input[type="checkbox"] {
     color: #f2bd21;
     background-color: #006b38;
     text-decoration: underline;
-    font-size: 20px;
+    font-size: medium;
     transition: 500ms; }
   .cards-f .button {
     pointer-events: auto;
     cursor: pointer;
     background: #e7e7e7;
     border: none;
-    padding: 1.5rem 3rem;
-    margin: 0;
+    padding: 0.8rem;
+    margin: 1rem 0rem;
     font-family: inherit;
     font-size: inherit;
     position: relative;
-    display: inline-block; }
+    display: inline-block;
+    height: auto;
+    width: auto; }
   .cards-f .button::before,
   .cards-f .button::after {
     position: absolute;
@@ -629,7 +638,7 @@ input[type="checkbox"] {
     height: 100px;
     width: 98%; }
   .social-group img:hover {
-    transform: scale(1.2); }
+    transform: scale(0.9); }
   .social-group .social-icons-f {
     list-style: none;
     margin: auto; }
