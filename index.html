@@ -7,11 +7,16 @@
     <title>Home - Network for Peace, Cohesion and Heritage Trust</title>
     <link rel="icon" href="./Images/logo.png" type="image/icon type">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+    href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+    rel="stylesheet"
+  />
     <link rel="stylesheet" href="css/styles.css">
     <!-- For deployment purposes -->
     <!-- <link rel="stylesheet" href="styles.css"> -->
 
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="nav">
@@ -158,32 +163,114 @@
     </div>
     <!-- <br> -->
     <div class="unveil" id="unveil">
-      <h3>The Unveiling</h3>
-      <p>Mandera County Governor, H.E Hon. Capt. Ali Ibrahim Roba during the unveiling of the Regional Peace, Cohesion, and Heritage Centre and the launch of the Cross-Border Health Report on 
+      <h1 class="heading-primary">The Unveiling</h1>
+
+
+      <p class="paragraph">Mandera County Governor, H.E Hon. Capt. Ali Ibrahim Roba during the unveiling of the Regional Peace, Cohesion, and Heritage Centre and the launch of the Cross-Border Health Report on 
         13th /12/2021 in Mandera County. He was joined by Inter peace Regional Director Dr Theo Hollander, County Commissioner Onesmus Kyatha, Deputy Governor H.E Mohamed Arai, Mandera County Assembly Speaker Hon. Mohamed Adan Khalif, IGAD representative Dr Aleo Garang, NCIC Commissioners and a team of staff from Interpeace led by Hassan Ismail.
       </p>
-      <p>Notes from the Speech;</p>
-      <ol type="1">
-        <li><p>Roba said the centre will help cross border communities in Ethiopia, Somalia, and Kenya. He was grateful to the Almighty to see a project of this magnitude being commissioned in a land county donated.</p></li>
-        <li><p>"A peaceful and secure environment is critical to every society since it affects all aspects of economic and social development in a country,” Roba said.</p></li>
-        <li><p>Elders from Banisa were recognized to have championed community peace in a sustainable manner by the Governor. He said peace has been sustained in the county through the input of elders even in election times when tensions rise. The governor thanked the Interpeace for equally playing a critical role in ensuring conflicts are resolved amicable with minimal violence and for funding the construction of the center with special mention of Hassan Ismail in spearheading this project.</p></li>
-        <li><p>"A peaceful and secure environment is critical to every society since it affects all aspects of economic and social development in a country,” he said while thanking the county security team who have been swiftly responding to outbreaks of conflicts while working with leaders and communities to forestall sporadic violence. </p></li>
-      </ol>
+      <p class="paragraph">Notes from the Speech;</p>
+
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>
+          </button>
+          <button class="btn operations__tab operations__tab--4" data-tab="4">
+            <span>04</span>
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-upload"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">Cross Border Communities</h5>
+          <p> 
+            Roba said the centre will help cross border communities in Ethiopia,
+            Somalia, and Kenya. He was grateful to the Almighty to see a project
+            of this magnitude being commissioned in a land county donated
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-home"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">Peaceful and Secure Environment</h5>
+          <p>
+            A peaceful and secure environment is critical to every society since
+            it affects all aspects of economic and social development in a
+            country,” Roba said.
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user-x"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">Peaceful Community</h5>
+          <p>
+            Elders from Banisa were recognized to have championed community
+            peace in a sustainable manner by the Governor. He said peace has
+            been sustained in the county through the input of elders even in
+            election times when tensions rise. The governor thanked the
+            Interpeace for equally playing a critical role in ensuring conflicts
+            are resolved amicable with minimal violence and for funding the
+            construction of the center with special mention of Hassan Ismail in
+            spearheading this project.
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--4">
+          <div class="operations__icon operations__icon--4">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user-x"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">Peaceful and security environment</h5>
+          <p>
+            A peaceful and secure environment is critical to every society since
+            it affects all aspects of economic and social development in a
+            country,” he said while thanking the county security team who have
+            been swiftly responding to outbreaks of conflicts while working with
+            leaders and communities to forestall sporadic violence.
+          </p>
+        </div>
+        </div>
+
     </div>
     <!-- <br> -->
     <div class="mandate" id="mandate">
-      <h3>Our Mandate</h3>
-      <p>The Regional Peace, Cohesion, and Heritage Centre is to:</p>
+      <h3 class="heading-secondary">Our Mandate</h3>
+      <p class="paragraph__mandate">The Regional Peace, Cohesion, and Heritage Centre is to:</p>
       <ul>
-        <li><p>Provide daily conflict early warning and early response, data collection, verification, and analysis.</p></li>
-        <li><p>Aid conflict rapid response to the population in the Mandera triangle.</p></li>
-        <li><p>Offer training, guidance, and mentorship to the various peacebuilding Infrastructures.</p></li>
-        <li><p>Provide daily contact points for county officials and community interlocutors.</p></li>
-        <li><p>Coordinate all activities of grassroot structures like the Ceasefire Monitoring Committees (CMCs), Intervillage Dialogue Spaces etc.</p></li>
-        <li><p>Provide secretarial support to the Peace Actor's Forums.</p></li>
-        <li><p>Contribute to the efforts of the international community in crisis prevention and stability by offering secretarial support to IGAD's cross border Conflict Prevention, Resolution and Management (CPRM) cluster in the triangle (Kenya, Somalia, and Ethiopia)</p></li>
-        <li><p>Offer research, policy and learning opportunities that incubates local contextually appropriate peacebuilding and conflict management frameworks for pastoral communities.</p></li>
-        <li><p>Incubate best practices in conflict management that are contextually appropriate in pastoral conflicts. Offer an important knowledge reference learning centre for peacebuilding, and on issues around fragility and resilience in Kenya and the region. Be a central platform where Interpeace will share its over 25 years of experience in peacebuilding with the Mandera triangle regional administrations and other actors in the region.</p></li>
+        <li><p class="paragraph__mandate"><span>...</span>Provide daily conflict early warning and early response, data collection, verification, and analysis.</p></li>
+        <li><p class="paragraph__mandate"> <span>...</span>Aid conflict rapid response to the population in the Mandera triangle.</p></li>
+        <li><p class="paragraph__mandate"> <span>...</span>Offer training, guidance, and mentorship to the various peacebuilding Infrastructures.</p></li>
+        <li><p class="paragraph__mandate"> <span>...</span>Provide daily contact points for county officials and community interlocutors.</p></li>
+        <li><p class="paragraph__mandate"> <span>...</span>Coordinate all activities of grassroot structures like the Ceasefire Monitoring Committees (CMCs), Intervillage Dialogue Spaces etc.</p></li>
+        <li><p class="paragraph__mandate"> <span>...</span>Provide secretarial support to the Peace Actor's Forums.</p></li>
+        <li><p class="paragraph__mandate"> <span>...</span>Contribute to the efforts of the international community in crisis prevention and stability by offering secretarial support to IGAD's cross border Conflict Prevention, Resolution and Management (CPRM) cluster in the triangle (Kenya, Somalia, and Ethiopia)</p></li>
+        <li><p class="paragraph__mandate"> <span>...</span>Offer research, policy and learning opportunities that incubates local contextually appropriate peacebuilding and conflict management frameworks for pastoral communities.</p></li>
+        <li><p class="paragraph__mandate"> <span>...</span>Incubate best practices in conflict management that are contextually appropriate in pastoral conflicts. Offer an important knowledge reference learning centre for peacebuilding, and on issues around fragility and resilience in Kenya and the region. Be a central platform where Interpeace will share its over 25 years of experience in peacebuilding with the Mandera triangle regional administrations and other actors in the region.</p></li>
       </ul>
     </div>
     <!-- <br> -->
