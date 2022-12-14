@@ -2,8 +2,7 @@ const tabs = document.querySelectorAll(".operations__tab");
 const tabsContainer = document.querySelector(".operations__tab-container");
 const tabsContent = document.querySelectorAll(".operations__content");
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/// Tabbed component
+/*Tabbed component*/
 
 tabsContainer.addEventListener("click", function (e) {
   const clicked = e.target.closest(".operations__tab");
