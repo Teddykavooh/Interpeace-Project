@@ -62,7 +62,7 @@ h2 {
     list-style: none; }
   .lists a {
     text-decoration: none;
-    color: #002d80;
+    color: #002b5c;
     font-size: 2.5vh; }
   .lists__dropdown-btn {
     transition: all 2s; }
@@ -211,31 +211,49 @@ input[type="checkbox"] {
 .intro__data {
   display: flex;
   height: 80vh;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  transition: all 2s; }
   .intro__data--image {
     width: 45%; }
     .intro__data--image img {
       width: 100%;
       height: 100%;
-      border-radius: 8px; }
+      border-radius: 8px;
+      transform: scale(1);
+      transition: transform 0.5s, opacity 0.5s; }
+    .intro__data--image img:hover {
+      opacity: 1;
+      transform: scale(0.899); }
   .intro__data--text {
     padding-top: 3rem;
     background-color: white;
     flex: 1; }
 
 .heading-primary {
-  color: #0065bd;
-  text-shadow: 2px 2px 10px black;
+  color: #002b5c;
+  text-shadow: 1px 1px 10px black;
   font-size: 3rem;
-  padding-bottom: 3.4rem; }
+  padding-bottom: 5.4rem;
+  letter-spacing: 1px; }
+
+.heading-primary:after,
+.heading-left:after {
+  display: block;
+  height: 2.5px;
+  background-color: #f3c807;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 3px; }
 
 .heading-secondary {
   color: #0065bd;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   font-size: 2.2rem;
   text-shadow: 1px 1px 18px black; }
 
 .heading-left {
+  color: #002b5c;
   text-align: center;
   font-size: 2.4rem;
   letter-spacing: 3px;
@@ -284,7 +302,7 @@ input[type="checkbox"] {
   padding: 13rem 4rem;
   text-align: center;
   font-size: 1rem;
-  background-color: #87dfe2;
+  background-color: #def5e5;
   margin-bottom: -20vh; }
 
 .values span {
@@ -316,17 +334,23 @@ input[type="checkbox"] {
     margin-right: auto; }
 
 .HomepageImages {
-  clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   height: 100vh;
   background-color: #fff;
   padding: 14rem 4rem 4rem;
   display: flex;
   gap: 0.7rem; }
+  .HomepageImages img:hover {
+    opacity: 1;
+    transform: scale(0.899); }
 
 .ImageOne img,
 .ImageTwo img {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  border-radius: 8px;
+  transform: scale(1);
+  transition: transform 0.5s, opacity 0.5s; }
 
 .ImageOne {
   height: 55vh;
@@ -342,19 +366,15 @@ input[type="checkbox"] {
   gap: 0.7rem; }
 
 .Image1 {
-  background-color: yellow;
   width: 55%; }
 
 .Image2 {
-  background-color: #456856;
   flex: 1; }
 
 .Image3 {
-  background-color: yellow;
   width: 45%; }
 
 .Image4 {
-  background-color: #456856;
   flex: 1; }
 
 /*/////////////////////////////////   OPERATIONS  ./////////////////////////////////////////////////////////*/
@@ -384,7 +404,7 @@ input[type="checkbox"] {
   margin: 3rem 1rem;
   padding: 1rem 0;
   border-radius: 3rem;
-  background-color: #85d3d6; }
+  background-color: #c0eee4; }
 
 .operations__tab-container {
   display: flex;
@@ -413,13 +433,13 @@ input[type="checkbox"] {
   margin: 0; }
 
 .operations__tab--5 {
-  background-color: #f0a500; }
+  background-color: #d09cfa; }
 
 .operations__tab--6 {
-  background-color: #ffca03; }
+  background-color: #ffd07f; }
 
 .operations__tab--7 {
-  background-color: #fff323;
+  background-color: #ffccd2;
   margin: 0; }
 
 .operations__tab--1:hover,
@@ -479,13 +499,13 @@ input[type="checkbox"] {
   background-color: #b38cac; }
 
 .operations__icon--5 {
-  background-color: #f0a500; }
+  background-color: #d09cfa; }
 
 .operations__icon--6 {
-  background-color: #ffca03; }
+  background-color: #ffd07f; }
 
 .operations__icon--7 {
-  background-color: #fff323; }
+  background-color: #ffccd2; }
 
 .operations__icon--1 svg {
   fill: black; }

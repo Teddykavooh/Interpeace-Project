@@ -15,6 +15,7 @@ $scroll-marg-size: 18.5vh;
   display: flex;
   height: 80vh;
   margin-bottom: 1rem;
+  transition: all 2s;
 
   &--image {
     width: 45%;
@@ -23,6 +24,13 @@ $scroll-marg-size: 18.5vh;
       width: 100%;
       height: 100%;
       border-radius: 8px;
+      transform: scale(1);
+      transition: transform 0.5s, opacity 0.5s;
+    }
+
+    img:hover {
+      opacity: 1;
+      transform: scale(0.899);
     }
   }
   &--text {
@@ -39,22 +47,36 @@ $scroll-marg-size: 18.5vh;
 //   text-shadow: 2px 2px 10px black;
 // }
 .heading-primary {
-  color: #0065bd;
-  text-shadow: 2px 2px 10px black;
+  // color: #0065bd;
+  color: #002b5c;
+  text-shadow: 1px 1px 10px black;
   font-size: 3rem;
-  padding-bottom: 3.4rem;
+  padding-bottom: 5.4rem;
+  letter-spacing: 1px;
 
   // padding: 15px;
   // font-size: 1.6rem;
 }
+.heading-primary:after,
+.heading-left:after {
+  display: block;
+  height: 2.5px;
+  background-color: #f3c807;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 3px;
+}
 .heading-secondary {
   color: #0065bd;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
+
   font-size: 2.2rem;
   text-shadow: 1px 1px 18px black;
 }
 .heading-left {
   // text-align: left;
+  color: #002b5c;
   text-align: center;
   font-size: 2.4rem;
   letter-spacing: 3px;
@@ -131,7 +153,8 @@ $scroll-marg-size: 18.5vh;
   padding: 13rem 4rem;
   text-align: center;
   font-size: 1rem;
-  background-color: #87dfe2;
+  // background-color: #87dfe2;
+  background-color: #def5e5;
   margin-bottom: -20vh;
   // background-color: rgb(89, 134, 165);
   // clip-path: polygon(0 0, 100% 0, 100% 130vh, 0 100%);
@@ -172,19 +195,28 @@ $scroll-marg-size: 18.5vh;
 }
 
 .HomepageImages {
-  clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   height: 100vh;
   background-color: #fff;
 
   padding: 14rem 4rem 4rem;
   display: flex;
   gap: 0.7rem;
+
+  img:hover {
+    opacity: 1;
+    transform: scale(0.899);
+  }
 }
 
 .ImageOne img,
 .ImageTwo img {
   height: 100%;
   width: 100%;
+
+  border-radius: 8px;
+  transform: scale(1);
+  transition: transform 0.5s, opacity 0.5s;
 }
 
 .ImageOne {
@@ -206,20 +238,20 @@ $scroll-marg-size: 18.5vh;
 }
 
 .Image1 {
-  background-color: yellow;
+  // background-color: yellow;
   width: 55%;
 }
 .Image2 {
-  background-color: #456856;
+  // background-color: #456856;
   flex: 1;
 }
 
 .Image3 {
-  background-color: yellow;
+  // background-color: yellow;
   width: 45%;
 }
 .Image4 {
-  background-color: #456856;
+  // background-color: #456856;
   flex: 1;
 }
 
@@ -258,7 +290,8 @@ $scroll-marg-size: 18.5vh;
   border-radius: 3rem;
 
   // background-color: #0ecabb;
-  background-color: #85d3d6;
+  background-color: #c0eee4;
+  // background-color: rgb(227, 243, 243);
 }
 
 .operations__tab-container {
@@ -293,14 +326,14 @@ $scroll-marg-size: 18.5vh;
 }
 
 .operations__tab--5 {
-  background-color: #f0a500;
+  background-color: #d09cfa;
 }
 
 .operations__tab--6 {
-  background-color: #ffca03;
+  background-color: #ffd07f;
 }
 .operations__tab--7 {
-  background-color: #fff323;
+  background-color: #ffccd2;
   margin: 0;
 }
 
@@ -373,13 +406,13 @@ $scroll-marg-size: 18.5vh;
 }
 
 .operations__icon--5 {
-  background-color: #f0a500;
+  background-color: #d09cfa;
 }
 .operations__icon--6 {
-  background-color: #ffca03;
+  background-color: #ffd07f;
 }
 .operations__icon--7 {
-  background-color: #fff323;
+  background-color: #ffccd2;
 }
 
 .operations__icon--1 svg {
