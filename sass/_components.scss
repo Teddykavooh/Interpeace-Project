@@ -3,7 +3,7 @@ $scroll-marg-size: 18.5vh;
   //   background-color: aqua;
   margin-top: 2em;
 
-  height: 210vh;
+  height: 185vh;
   scroll-margin-top: $scroll-marg-size;
   text-align: center;
   // padding: 80px;
@@ -17,22 +17,46 @@ $scroll-marg-size: 18.5vh;
   // background-color: #413f57;
 
   display: flex;
-  height: 80vh;
-  margin-bottom: 1rem;
+
+  margin-bottom: 2rem;
   transition: all 2s;
+  border-radius: 1rem;
+  background: rgb(187, 223, 200);
+  background: radial-gradient(
+    circle,
+    rgba(187, 223, 200, 1) 0%,
+    rgba(240, 229, 216, 1) 93%
+  );
+}
+.intro__dataOne {
+  height: 55vh;
+}
+.intro__dataTwo {
+  height: 70vh;
 }
 
 .intro__dataOne--textOne,
 .intro__dataTwo--textTwo {
-  padding-top: 3rem;
-  background-color: rgb(255, 255, 255);
+  // padding-top: 3rem;
+  // padding: 1rsem auto;
+  // background-color: rgb(255, 255, 255);
   // background-color: #cffffe;
   flex: 1;
 }
-.intro__dataOne--imageOne,
+.intro__dataOne--imageOne {
+  width: 45%;
+  height: 54vh;
+  padding-top: 0.3rem;
+  // padding: 0.8rem 0;
+}
+
 .intro__dataTwo--imageTwo {
   width: 45%;
+  height: 60vh;
+  padding-top: 1rem;
+  // padding: 0.8rem 0;
 }
+
 .intro__dataOne,
 .intro__dataTwo {
   // background-color: #413f57;
@@ -98,7 +122,7 @@ $scroll-marg-size: 18.5vh;
   text-align: left;
   line-height: 2;
   color: rgb(41, 38, 38);
-  font-size: 1rem;
+  font-size: 1.05rem;
 }
 .paragraph {
   padding: 1rem 4rem;
@@ -140,6 +164,7 @@ $scroll-marg-size: 18.5vh;
   text-align: center;
   font-size: 1rem;
   background-color: rgb(227, 243, 243);
+
   clip-path: polygon(0 0, 100% 0, 100% 130vh, 0 100%);
   z-index: 20;
 }
@@ -163,11 +188,15 @@ $scroll-marg-size: 18.5vh;
   padding: 13rem 4rem;
   text-align: center;
   font-size: 1rem;
-  // background-color: #87dfe2;
-  background-color: #def5e5;
+
+  // background-color: #def5e5;
+  background: rgb(187, 223, 200);
+  background: radial-gradient(
+    circle,
+    rgba(187, 223, 200, 1) 0%,
+    rgba(240, 229, 216, 1) 93%
+  );
   margin-bottom: -20vh;
-  // background-color: rgb(89, 134, 165);
-  // clip-path: polygon(0 0, 100% 0, 100% 130vh, 0 100%);
 }
 
 .values span {

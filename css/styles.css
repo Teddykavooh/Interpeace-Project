@@ -232,7 +232,7 @@ input[type="checkbox"] {
 
 .intro {
   margin-top: 2em;
-  height: 210vh;
+  height: 185vh;
   scroll-margin-top: 18.5vh;
   text-align: center;
   padding: 4rem;
@@ -241,19 +241,31 @@ input[type="checkbox"] {
 .intro__dataOne,
 .intro__dataTwo {
   display: flex;
-  height: 80vh;
-  margin-bottom: 1rem;
-  transition: all 2s; }
+  margin-bottom: 2rem;
+  transition: all 2s;
+  border-radius: 1rem;
+  background: #bbdfc8;
+  background: radial-gradient(circle, #bbdfc8 0%, #f0e5d8 93%); }
+
+.intro__dataOne {
+  height: 55vh; }
+
+.intro__dataTwo {
+  height: 70vh; }
 
 .intro__dataOne--textOne,
 .intro__dataTwo--textTwo {
-  padding-top: 3rem;
-  background-color: white;
   flex: 1; }
 
-.intro__dataOne--imageOne,
+.intro__dataOne--imageOne {
+  width: 45%;
+  height: 54vh;
+  padding-top: 0.3rem; }
+
 .intro__dataTwo--imageTwo {
-  width: 45%; }
+  width: 45%;
+  height: 60vh;
+  padding-top: 1rem; }
 
 .intro__dataOne img,
 .intro__dataTwo img {
@@ -303,7 +315,7 @@ input[type="checkbox"] {
   text-align: left;
   line-height: 2;
   color: #292626;
-  font-size: 1rem; }
+  font-size: 1.05rem; }
 
 .paragraph {
   padding: 1rem 4rem; }
@@ -342,7 +354,8 @@ input[type="checkbox"] {
   padding: 13rem 4rem;
   text-align: center;
   font-size: 1rem;
-  background-color: #def5e5;
+  background: #bbdfc8;
+  background: radial-gradient(circle, #bbdfc8 0%, #f0e5d8 93%);
   margin-bottom: -20vh; }
 
 .values span {
