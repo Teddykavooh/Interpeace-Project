@@ -163,7 +163,7 @@ $scroll-marg-size: 18.5vh;
   height: 150vh;
   padding: 4rem;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
   background-color: rgb(227, 243, 243);
 
   clip-path: polygon(0 0, 100% 0, 100% 130vh, 0 100%);
@@ -177,7 +177,7 @@ $scroll-marg-size: 18.5vh;
   height: 130vh;
   padding: 5rem 4rem;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
   // background-color: rgb(192, 143, 37);
   // clip-path: polygon(0 0, 100% 0, 100% 130vh, 0 100%);
 }
@@ -599,13 +599,19 @@ $scroll-marg-size: 18.5vh;
     padding: 10rem 2rem 2rem;
     // height: 85vh;
   }
+  .paragraph {
+    font-size: 1.05rem;
+  }
+  .operations {
+    font-size: 1.05rem;
+  }
   .intro {
-    height: 267vh;
-    font-size: 0.7rem;
+    height: 263vh;
+    // font-size: 0.7rem;
   }
 
   .intro__dataOne {
-    min-height: 105vh;
+    min-height: 100vh;
   }
   .intro__dataOne {
     // height: 74vh;
@@ -737,15 +743,15 @@ $scroll-marg-size: 18.5vh;
 
 @media (max-width: 500px) {
   .intro__dataOne {
-    min-height: 115vh;
+    min-height: 112vh;
   }
   .intro__dataTwo {
-    height: 125vh;
+    height: 122vh;
   }
 
   .intro {
-    min-height: 285vh;
-    font-size: 1rem;
+    min-height: 277vh;
+    // font-size: 1rem;
   }
   .heading-primary {
     text-shadow: none;
@@ -776,6 +782,10 @@ $scroll-marg-size: 18.5vh;
     grid-template-columns: 1fr;
     row-gap: 0.5rem;
   }
+
+  // .paragraph {
+  //   font-size: 1rem;
+  // }
 }
 
 @media (max-width: 450px) {
@@ -787,11 +797,11 @@ $scroll-marg-size: 18.5vh;
     min-height: 128vh;
   }
   .intro__dataTwo {
-    height: 130vh;
+    // height: 130vh;
   }
 
   .intro {
-    min-height: 312vh;
+    min-height: 300vh;
     font-size: 0.8rem;
   }
   // .intro {
@@ -840,7 +850,26 @@ $scroll-marg-size: 18.5vh;
   .intro,
   .values,
   .operations {
-    font-size: 0.8rem;
+    // font-size: 0.4rem;
+  }
+
+  .intro__dataOne {
+    min-height: 118vh;
+  }
+  .intro__dataTwo {
+    // height: 130vh;
+  }
+
+  .intro {
+    min-height: 285vh;
+    // font-size: 0.8rem;
+  }
+
+  .paragraph {
+    font-size: 0.9rem;
+  }
+  .operations {
+    font-size: 0.9rem;
   }
 }
 
@@ -863,7 +892,18 @@ $scroll-marg-size: 18.5vh;
   }
 }
 
-@media (max-width: 310px) {
+@media (max-width: 300px) {
+  .intro__dataOne {
+    min-height: 123vh;
+  }
+  .intro__dataTwo {
+    height: 130vh;
+  }
+
+  .intro {
+    min-height: 300vh;
+    // font-size: 0.8rem;
+  }
   // .intro {
   //   min-height: 298vh;
 
@@ -875,6 +915,19 @@ $scroll-marg-size: 18.5vh;
   // .intro__dataOne {
   //   min-height: 115vh;
   // }
+}
+
+@media (max-width: 270px) {
+  // .intro__dataOne {
+  //   min-height: 123vh;
+  // }
+  // .intro__dataTwo {
+  //   height: 130vh;
+  // }
+
+  .intro {
+    min-height: 310vh;
+  }
 }
 
 @media (max-width: 283px) {

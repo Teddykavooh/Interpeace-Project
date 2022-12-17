@@ -182,17 +182,20 @@ input[type="checkbox"] {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #ce1e3e; }
+  background-color: #002a8f; }
 
 @media (max-width: 900px) {
   .nav {
     flex-direction: column;
     padding: 0;
-    height: 15vh; }
+    height: 13vh; }
   .nav__logo {
     margin: 0.35rem 2rem;
     display: flex;
     justify-content: space-between; }
+  .ImageLogo {
+    height: 5rem;
+    width: 5rem; }
   .hamburger {
     display: block;
     padding: 0 24px; }
@@ -204,7 +207,7 @@ input[type="checkbox"] {
     transform: translateY(-8px) rotate(-45deg); }
   .links {
     position: fixed;
-    top: 15vh;
+    top: 12vh;
     width: 100%;
     height: 90vh;
     left: -100%;
@@ -338,7 +341,7 @@ input[type="checkbox"] {
   height: 150vh;
   padding: 4rem;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
   background-color: #e3f3f3;
   clip-path: polygon(0 0, 100% 0, 100% 130vh, 0 100%);
   z-index: 20; }
@@ -348,7 +351,7 @@ input[type="checkbox"] {
   height: 130vh;
   padding: 5rem 4rem;
   text-align: center;
-  font-size: 1rem; }
+  font-size: 1.1rem; }
 
 .values {
   clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
@@ -636,11 +639,14 @@ input[type="checkbox"] {
   .HomepageImages {
     clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0 100%);
     padding: 10rem 2rem 2rem; }
+  .paragraph {
+    font-size: 1.05rem; }
+  .operations {
+    font-size: 1.05rem; }
   .intro {
-    height: 267vh;
-    font-size: 0.7rem; }
+    height: 263vh; }
   .intro__dataOne {
-    min-height: 105vh; }
+    min-height: 100vh; }
   .paragraph {
     padding: 1rem; }
   .values {
@@ -693,12 +699,11 @@ input[type="checkbox"] {
 
 @media (max-width: 500px) {
   .intro__dataOne {
-    min-height: 115vh; }
+    min-height: 112vh; }
   .intro__dataTwo {
-    height: 125vh; }
+    height: 122vh; }
   .intro {
-    min-height: 285vh;
-    font-size: 1rem; }
+    min-height: 277vh; }
   .heading-primary {
     text-shadow: none;
     font-size: 2.4rem;
@@ -723,10 +728,8 @@ input[type="checkbox"] {
     clip-path: polygon(0 7vh, 100% 0, 100% 100%, 0 100%); }
   .intro__dataOne {
     min-height: 128vh; }
-  .intro__dataTwo {
-    height: 130vh; }
   .intro {
-    min-height: 312vh;
+    min-height: 300vh;
     font-size: 0.8rem; }
   .values {
     clip-path: polygon(0 8vh, 100% 0, 100% 100%, 0 100%);
@@ -745,13 +748,29 @@ input[type="checkbox"] {
     column-gap: 2px; } }
 
 @media (max-width: 400px) {
-  .intro,
-  .values,
+  .intro__dataOne {
+    min-height: 118vh; }
+  .intro {
+    min-height: 285vh; }
+  .paragraph {
+    font-size: 0.9rem; }
   .operations {
-    font-size: 0.8rem; } }
+    font-size: 0.9rem; } }
+
+@media (max-width: 300px) {
+  .intro__dataOne {
+    min-height: 123vh; }
+  .intro__dataTwo {
+    height: 130vh; }
+  .intro {
+    min-height: 300vh; } }
+
+@media (max-width: 270px) {
+  .intro {
+    min-height: 310vh; } }
 
 .section {
-  background-color: #DCE2E6;
+  background-color: #dce2e6;
   display: flex;
   justify-content: space-between;
   height: 70vh;
@@ -772,7 +791,7 @@ input[type="checkbox"] {
     margin-right: auto;
     width: 100%;
     height: 100%;
-    transition: .3s; }
+    transition: 0.3s; }
   .section_content img:hover {
     filter: none;
     transform: scale(1.5);
@@ -823,7 +842,7 @@ input[type="checkbox"] {
       position: absolute;
       right: 2%;
       bottom: 8%;
-      width: 20%;
+      width: 25%;
       height: auto;
       margin: auto;
       text-align: center;
@@ -832,7 +851,8 @@ input[type="checkbox"] {
       .slideshow-container .mySlides__text p {
         margin: auto;
         color: white;
-        font-size: 1.5rem; }
+        font-size: 1.5rem;
+        padding: 1rem; }
   .slideshow-container__dots {
     height: 5%;
     padding: 0.5rem; }
