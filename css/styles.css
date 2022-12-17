@@ -39,7 +39,8 @@ h2 {
   top: 0;
   z-index: 10;
   padding: 0.6rem 2rem;
-  transition: all 2s; }
+  transition: all 2s;
+  border-bottom: 1px solid #c4c6cc; }
 
 .ImageLogo {
   height: 6rem;
@@ -67,7 +68,8 @@ h2 {
   .lists a {
     text-decoration: none;
     color: #002b5c;
-    font-size: 2.5vh; }
+    font-weight: 700;
+    font-size: 1.2rem; }
   .lists__dropdown-btn {
     transition: all 2s; }
   .lists__dropdown-btn:hover .lists__dropdown-content {
@@ -83,7 +85,7 @@ h2 {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1; }
     .lists__dropdown-content a {
-      color: black;
+      color: #002a8f;
       padding: 12px 16px;
       text-decoration: none;
       display: block;
@@ -232,11 +234,11 @@ input[type="checkbox"] {
 
 .intro {
   margin-top: 2em;
-  height: 185vh;
+  height: 180vh;
   scroll-margin-top: 18.5vh;
   text-align: center;
   padding: 4rem;
-  font-size: 1rem; }
+  font-size: 1.05rem; }
 
 .intro__dataOne,
 .intro__dataTwo {
@@ -285,7 +287,7 @@ input[type="checkbox"] {
   text-shadow: 1px 1px 10px black;
   font-size: 3rem;
   padding-bottom: 5.4rem;
-  letter-spacing: 1px; }
+  letter-spacing: 2px; }
 
 .heading-primary:after,
 .heading-left:after {
@@ -315,7 +317,7 @@ input[type="checkbox"] {
   text-align: left;
   line-height: 2;
   color: #292626;
-  font-size: 1.05rem; }
+  font-size: 1.1rem; }
 
 .paragraph {
   padding: 1rem 4rem; }
@@ -353,7 +355,7 @@ input[type="checkbox"] {
   min-height: 135vh;
   padding: 13rem 4rem;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
   background: #bbdfc8;
   background: radial-gradient(circle, #bbdfc8 0%, #f0e5d8 93%);
   margin-bottom: -20vh; }
@@ -572,8 +574,14 @@ input[type="checkbox"] {
 
 /*/////////////////////////////////   OPERATIONS  ./////////////////////////////////////////////////////////*/
 @media (max-width: 1200px) {
+  .intro__dataTwo {
+    height: 80vh; }
   .paragraph {
     padding: 1rem 2rem; } }
+
+@media (max-width: 1100px) {
+  .intro__dataOne {
+    height: 60vh; } }
 
 @media (max-width: 1000px) {
   .HomepageImages {
@@ -581,38 +589,29 @@ input[type="checkbox"] {
     padding: 10rem 4rem 4rem;
     height: 110vh;
     gap: 0.5rem; }
-  .ImageOne,
-  .ImageTwo {
+  .intro {
+    height: 250vh; }
+  .intro__dataTwo {
+    flex-direction: column;
+    border: 0.3px solid #faeee0; }
+  .intro__dataOne {
+    min-height: 100vh;
+    border: 0.3px solid #faeee0;
+    flex-direction: column; }
+  .intro__dataOne--imageOne,
+  .intro__dataTwo--imageTwo {
+    width: 100%;
+    height: 55vh; }
+  .ImageOne {
     height: 90vh;
     gap: 0.5rem; }
   .values {
     padding: 10rem 4rem;
-    clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0 100%); }
-  .intro {
-    height: 220vh; }
-  .intro__dataOne {
-    margin-bottom: 3rem;
-    height: 70vh; }
-    .intro__dataOne--textOne {
-      padding-top: 0.4rem; }
-  .intro__dataTwo {
-    height: 95vh; }
-    .intro__dataTwo--textTwo {
-      padding-top: 0.4rem; } }
+    clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0 100%); } }
 
 @media (max-width: 900px) {
-  .ImageOne,
-  .ImageTwo {
-    flex-direction: column;
-    height: 85vh; }
-  .Image1,
-  .Image3 {
-    width: 100%; }
-  .Image3 {
-    height: 40vh; }
-  .Image1 {
-    height: 45vh; }
   .intro {
+    height: 255vh;
     padding: 4rem 2rem; } }
 
 @media (max-width: 850px) {
@@ -638,19 +637,10 @@ input[type="checkbox"] {
     clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0 100%);
     padding: 10rem 2rem 2rem; }
   .intro {
-    height: 227vh;
+    height: 267vh;
     font-size: 0.7rem; }
   .intro__dataOne {
-    height: 74vh;
-    padding: 5px; }
-  .intro__dataOne--imageOne {
-    width: 40%; }
-  .intro__dataTwo {
-    padding: 5px;
-    flex-direction: column; }
-  .intro__dataTwo--imageTwo {
-    width: 100%;
-    height: 50vh; }
+    min-height: 105vh; }
   .paragraph {
     padding: 1rem; }
   .values {
@@ -661,12 +651,8 @@ input[type="checkbox"] {
     min-height: 260vh; }
   .intro__dataTwo {
     border: 0.3px solid #faeee0; }
-  .intro__dataOne {
-    min-height: 100vh;
-    border: 0.3px solid #faeee0;
-    flex-direction: column; }
-  .intro__dataOne--imageOne {
-    width: 100%;
+  .intro__dataOne--imageOne,
+  .intro__dataTwo--imageTwo {
     height: 50vh; }
   .values {
     padding: 8rem 1.5rem;
@@ -680,6 +666,12 @@ input[type="checkbox"] {
 @media (max-width: 600px) {
   .HomepageImages {
     padding: 10rem 1rem 1rem; }
+  .intro__dataOne {
+    min-height: 110vh; }
+  .intro__dataTwo {
+    min-height: 120vh; }
+  .intro {
+    min-height: 280vh; }
   .ImageOne,
   .ImageTwo {
     flex-direction: column;
@@ -688,8 +680,6 @@ input[type="checkbox"] {
     height: 30vh; }
   .Image1 {
     height: 35vh; }
-  .intro__dataOne {
-    min-height: 100vh; }
   .operations__tab {
     margin-right: 1.2rem; }
   .btnn {
@@ -699,15 +689,16 @@ input[type="checkbox"] {
 
 @media (max-width: 550px) {
   .intro {
-    padding: 4rem 1rem; }
-  .paragraph {
-    padding: 0.5rem 0; } }
+    padding: 4rem 1rem; } }
 
 @media (max-width: 500px) {
   .intro__dataOne {
-    min-height: 105vh; }
+    min-height: 115vh; }
   .intro__dataTwo {
     height: 125vh; }
+  .intro {
+    min-height: 285vh;
+    font-size: 1rem; }
   .heading-primary {
     text-shadow: none;
     font-size: 2.4rem;
@@ -730,15 +721,16 @@ input[type="checkbox"] {
 @media (max-width: 450px) {
   .HomepageImages {
     clip-path: polygon(0 7vh, 100% 0, 100% 100%, 0 100%); }
-  .intro {
-    min-height: 269vh;
-    padding: 4rem 1rem;
-    font-size: 0.6rem; }
   .intro__dataOne {
-    min-height: 110vh; }
+    min-height: 128vh; }
+  .intro__dataTwo {
+    height: 130vh; }
+  .intro {
+    min-height: 312vh;
+    font-size: 0.8rem; }
   .values {
     clip-path: polygon(0 8vh, 100% 0, 100% 100%, 0 100%);
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     min-height: 110vh; }
   .operations__content p {
     grid-column: 0; }
@@ -747,36 +739,16 @@ input[type="checkbox"] {
     margin: 3rem 0;
     padding: 1rem 0;
     border-radius: 1rem;
-    font-size: 0.6rem; }
+    font-size: 0.9rem; }
   .operations__content--active {
     display: grid;
     column-gap: 2px; } }
 
-@media (max-width: 370px) {
-  .intro {
-    min-height: 285vh; }
-  .intro__dataOne {
-    min-height: 115vh; }
-  .intro__dataTwo {
-    height: 130vh; }
-  .values {
-    padding: 6rem 1rem; } }
-
-@media (max-width: 310px) {
-  .intro {
-    min-height: 298vh; }
-  .intro__dataTwo {
-    height: 146vh; }
-  .intro__dataOne {
-    min-height: 115vh; } }
-
-@media (max-width: 283px) {
-  .intro {
-    min-height: 310vh; }
-  .intro__dataOne {
-    min-height: 119vh; }
-  .intro__dataTwo {
-    height: 152vh; } }
+@media (max-width: 400px) {
+  .intro,
+  .values,
+  .operations {
+    font-size: 0.8rem; } }
 
 .section {
   background-color: #DCE2E6;
@@ -830,18 +802,40 @@ input[type="checkbox"] {
 /* Slideshow */
 /* Slideshow container */
 .slideshow-container {
+  max-width: 1600px;
   height: 80vh;
   scroll-margin-top: 18vh;
+  position: relative;
+  margin: auto;
   z-index: 1; }
-
-.mySlides {
-  width: 100%;
-  height: 100%;
-  display: none; }
-
-.mySlides img {
-  width: 100%;
-  height: 100%; }
+  .slideshow-container .mySlides {
+    width: 100%;
+    height: 95%;
+    display: none;
+    /* Caption text */ }
+    .slideshow-container .mySlides img {
+      width: 100%;
+      height: 100%; }
+    .slideshow-container .mySlides__text {
+      background-color: black;
+      opacity: 0.7;
+      border-radius: 0.8rem;
+      position: absolute;
+      right: 2%;
+      bottom: 8%;
+      width: 20%;
+      height: auto;
+      margin: auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column; }
+      .slideshow-container .mySlides__text p {
+        margin: auto;
+        color: white;
+        font-size: 1.5rem; }
+  .slideshow-container__dots {
+    height: 5%;
+    padding: 0.5rem; }
 
 /* Next & previous buttons */
 .prev,
@@ -868,17 +862,6 @@ input[type="checkbox"] {
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8); }
-
-/* Caption text */
-.text {
-  color: #002da0;
-  background-color: rgba(250, 234, 8, 0.2);
-  font-size: 2rem;
-  padding: 1rem 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center; }
 
 /* Number text (1/3 etc) */
 .numbertext {
