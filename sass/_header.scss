@@ -181,13 +181,17 @@ $gradient: #00b5f5;
   padding-top: 1vh;
   // list-style: none;
   margin: 1em;
+  font-size: 1.05rem;
   // margin-left: 0;
   // padding: auto;
   color: #002d5b;
   text-decoration: none;
+  font-weight: 400;
 }
 
 .social-contact:hover {
+  color: #002a8f;
+  font-weight: 700;
   // transform: scale(0);
   // transform: scale(1);
   background-color: #dddddd;
@@ -213,11 +217,14 @@ $gradient: #00b5f5;
   }
 
   i {
-    color: #76cef0;
+    color: #002a8f;
+    // color: #76cef0;
+    // color: #f3c807;
     position: absolute;
     top: 1.2vh;
     left: 1.3vh;
     transition: all $timing ease-out;
+    font-size: 1.5rem;
   }
 
   a {
@@ -231,7 +238,7 @@ $gradient: #00b5f5;
       // border-radius: 100%;
       display: block;
       // background: linear-gradient(45deg, $iconColor, $accent);
-      background-color: ivory;
+      // background-color: #f3c807;
       transition: all $timing ease-out;
     }
 
@@ -242,11 +249,12 @@ $gradient: #00b5f5;
 
     &:hover i {
       @include transformScale(1.5);
-      color: $iconColor;
-      background: -webkit-linear-gradient(45deg, $iconColor, $accent);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      // color: $iconColor;
+      // background: -webkit-linear-gradient(45deg, $iconColor, $accent);
+      // background-clip: text;
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
+      color: #f3c807;
       transition: all $timing ease-in;
     }
   }
@@ -461,5 +469,20 @@ $gradient: #00b5f5;
 
   .social-icons {
     margin-left: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav__logo {
+    margin: 0.35rem 2rem;
+
+    // background-color: #f3c807;
+  }
+
+  .ImageLogo {
+    align-self: center;
+    height: 4rem;
+    width: 4rem;
+    margin-top: 1rem;
   }
 }

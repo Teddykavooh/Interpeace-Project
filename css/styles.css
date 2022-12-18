@@ -122,10 +122,14 @@ input[type="checkbox"] {
 .social-contact {
   padding-top: 1vh;
   margin: 1em;
+  font-size: 1.05rem;
   color: #002d5b;
-  text-decoration: none; }
+  text-decoration: none;
+  font-weight: 400; }
 
 .social-contact:hover {
+  color: #002a8f;
+  font-weight: 700;
   background-color: #dddddd; }
 
 .social-icons {
@@ -137,11 +141,12 @@ input[type="checkbox"] {
     position: relative;
     font-size: 1.2em; }
   .social-icons i {
-    color: #76cef0;
+    color: #002a8f;
     position: absolute;
     top: 1.2vh;
     left: 1.3vh;
-    transition: all 265ms ease-out; }
+    transition: all 265ms ease-out;
+    font-size: 1.5rem; }
   .social-icons a {
     display: inline-block; }
     .social-icons a:before {
@@ -152,7 +157,6 @@ input[type="checkbox"] {
       width: 5vh;
       height: 5vh;
       display: block;
-      background-color: ivory;
       transition: all 265ms ease-out; }
     .social-icons a:hover:before {
       transform: scale(0);
@@ -161,11 +165,7 @@ input[type="checkbox"] {
       transform: scale(1.5);
       -ms-transform: scale(1.5);
       -webkit-transform: scale(1.5);
-      color: #00b5f5;
-      background: -webkit-linear-gradient(45deg, #00b5f5, #002a8f);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: #f3c807;
       transition: all 265ms ease-in; }
 
 .hamburger {
@@ -235,13 +235,30 @@ input[type="checkbox"] {
   .social-icons {
     margin-left: 2rem; } }
 
+@media (max-width: 500px) {
+  .nav__logo {
+    margin: 0.35rem 2rem; }
+  .ImageLogo {
+    align-self: center;
+    height: 4rem;
+    width: 4rem;
+    margin-top: 1rem; } }
+
 .intro {
-  margin-top: 2em;
   height: 180vh;
   scroll-margin-top: 18.5vh;
   text-align: center;
   padding: 4rem;
   font-size: 1.05rem; }
+
+.introObjetives {
+  clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+  padding: 10rem 4rem 4rem;
+  background-color: #ffffff;
+  margin-bottom: -10rem;
+  height: 200vh; }
+  .introObjetives h3 {
+    padding-bottom: 4rem; }
 
 .intro__dataOne,
 .intro__dataTwo {
@@ -361,7 +378,7 @@ input[type="checkbox"] {
   font-size: 1.1rem;
   background: #bbdfc8;
   background: radial-gradient(circle, #bbdfc8 0%, #f0e5d8 93%);
-  margin-bottom: -20vh; }
+  margin-bottom: -25vh; }
 
 .values span {
   font-weight: 500; }
@@ -395,7 +412,7 @@ input[type="checkbox"] {
   clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   height: 100vh;
   background-color: #fff;
-  padding: 14rem 4rem 4rem;
+  padding: 13rem 4rem 4rem;
   display: flex;
   gap: 0.7rem; }
   .HomepageImages img:hover {
@@ -577,10 +594,16 @@ input[type="checkbox"] {
 
 /*/////////////////////////////////   OPERATIONS  ./////////////////////////////////////////////////////////*/
 @media (max-width: 1200px) {
+  .introObjetives {
+    margin-bottom: -10rem;
+    height: 210vh; }
   .intro__dataTwo {
     height: 80vh; }
   .paragraph {
-    padding: 1rem 2rem; } }
+    padding: 1rem 2rem; }
+  .HomepageImages {
+    padding: 11 rem 2rem 2rem;
+    gap: 0.5rem; } }
 
 @media (max-width: 1100px) {
   .intro__dataOne {
@@ -589,11 +612,14 @@ input[type="checkbox"] {
 @media (max-width: 1000px) {
   .HomepageImages {
     clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0 100%);
-    padding: 10rem 4rem 4rem;
-    height: 110vh;
+    padding: 10rem 2rem 2rem;
+    height: 100vh;
     gap: 0.5rem; }
   .intro {
-    height: 250vh; }
+    height: 260vh; }
+  .introObjetives {
+    margin-bottom: -5rem;
+    height: 276vh; }
   .intro__dataTwo {
     flex-direction: column;
     border: 0.3px solid #faeee0; }
@@ -606,7 +632,10 @@ input[type="checkbox"] {
     width: 100%;
     height: 55vh; }
   .ImageOne {
-    height: 90vh;
+    height: 50vh;
+    gap: 0.5rem; }
+  .ImageTwo {
+    height: 50vh;
     gap: 0.5rem; }
   .values {
     padding: 10rem 4rem;
@@ -615,7 +644,29 @@ input[type="checkbox"] {
 @media (max-width: 900px) {
   .intro {
     height: 255vh;
-    padding: 4rem 2rem; } }
+    padding: 4rem 2rem; }
+  .ImageOne,
+  .ImageTwo {
+    flex-direction: column;
+    height: 75vh; }
+  .Image2 {
+    background-color: #10f57f;
+    width: 100%; }
+  .Image3 {
+    height: 30vh;
+    background-color: #456856;
+    width: 100%; }
+  .Image4 {
+    background-color: #b38cac;
+    width: 100%; }
+  .Image1 {
+    height: 35vh;
+    background-color: #f3c807;
+    width: 100%; }
+  .introObjetives {
+    margin-bottom: -5rem;
+    padding: 10rem 4rem 4rem;
+    height: 280vh; } }
 
 @media (max-width: 850px) {
   .operations__icon {
@@ -647,6 +698,12 @@ input[type="checkbox"] {
     height: 263vh; }
   .intro__dataOne {
     min-height: 100vh; }
+  .introObjetives {
+    margin-bottom: -5rem;
+    height: 265vh;
+    margin-bottom: -5rem;
+    padding: 9rem 2rem;
+    height: 270vh; }
   .paragraph {
     padding: 1rem; }
   .values {
@@ -655,11 +712,18 @@ input[type="checkbox"] {
 @media (max-width: 700px) {
   .intro {
     min-height: 260vh; }
+  .introObjetives {
+    height: 275vh;
+    padding: 8rem 2rem; }
   .intro__dataTwo {
     border: 0.3px solid #faeee0; }
   .intro__dataOne--imageOne,
   .intro__dataTwo--imageTwo {
     height: 50vh; }
+  .introObjetives {
+    clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0 100%);
+    padding: 10rem 2rem 2rem;
+    margin-top: -8rem; }
   .values {
     padding: 8rem 1.5rem;
     margin-bottom: -10vh;
@@ -678,6 +742,9 @@ input[type="checkbox"] {
     min-height: 120vh; }
   .intro {
     min-height: 280vh; }
+  .introObjetives {
+    height: 275vh;
+    padding: 7rem 2rem; }
   .ImageOne,
   .ImageTwo {
     flex-direction: column;
@@ -695,15 +762,36 @@ input[type="checkbox"] {
 
 @media (max-width: 550px) {
   .intro {
-    padding: 4rem 1rem; } }
+    padding: 4rem 1rem; }
+  .introObjetives {
+    padding: 8rem 1rem 1rem; }
+  .heading-left {
+    font-size: 1.7rem; }
+  .HomepageImages {
+    height: 80vh; }
+  .ImageOne,
+  .ImageTwo {
+    flex-direction: column;
+    height: 45vh; }
+  .Image3,
+  .Image2 {
+    height: 20vh; }
+  .Image1,
+  .Image4 {
+    height: 25vh; } }
 
 @media (max-width: 500px) {
+  .HomepageImages {
+    padding: 6rem 1rem 1rem;
+    height: 70vh; }
   .intro__dataOne {
     min-height: 112vh; }
   .intro__dataTwo {
     height: 122vh; }
   .intro {
     min-height: 277vh; }
+  .introObjetives {
+    height: 300vh; }
   .heading-primary {
     text-shadow: none;
     font-size: 2.4rem;
@@ -731,6 +819,9 @@ input[type="checkbox"] {
   .intro {
     min-height: 300vh;
     font-size: 0.8rem; }
+  .introObjetives {
+    height: 315vh;
+    padding: 7rem 1rem; }
   .values {
     clip-path: polygon(0 8vh, 100% 0, 100% 100%, 0 100%);
     font-size: 0.8rem;
@@ -752,10 +843,19 @@ input[type="checkbox"] {
     min-height: 118vh; }
   .intro {
     min-height: 285vh; }
+  .introObjetives {
+    margin-bottom: -5rem;
+    height: 295vh; }
+  .heading-left {
+    font-size: 1.5rem; }
   .paragraph {
     font-size: 0.9rem; }
   .operations {
     font-size: 0.9rem; } }
+
+@media (max-width: 330px) {
+  .introObjetives {
+    height: 295vh; } }
 
 @media (max-width: 300px) {
   .intro__dataOne {
@@ -763,11 +863,17 @@ input[type="checkbox"] {
   .intro__dataTwo {
     height: 130vh; }
   .intro {
-    min-height: 300vh; } }
+    min-height: 300vh; }
+  .HomepageImages {
+    height: 65vh; }
+  .introObjetives {
+    height: 319vh; } }
 
 @media (max-width: 270px) {
   .intro {
-    min-height: 310vh; } }
+    min-height: 310vh; }
+  .introObjetives {
+    height: 326vh; } }
 
 .section {
   background-color: #dce2e6;
