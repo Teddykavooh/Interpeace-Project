@@ -953,11 +953,11 @@ input[type="checkbox"] {
       margin: auto;
       text-align: center;
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      font-size: 1.5rem; }
       .slideshow-container .mySlides__text p {
         margin: auto;
         color: white;
-        font-size: 1.5rem;
         padding: 1rem; }
   .slideshow-container__dots {
     height: 5%;
@@ -1029,6 +1029,24 @@ input[type="checkbox"] {
   .next,
   .text {
     font-size: 11px; } }
+
+@media only screen and (max-width: 900px) {
+  .slideshow-container .mySlides__text {
+    width: 35%;
+    font-size: 1rem; } }
+
+@media only screen and (max-width: 800px) {
+  .slideshow-container {
+    height: 60vh; } }
+
+@media only screen and (max-width: 700px) {
+  .slideshow-container {
+    height: 50vh; } }
+
+@media only screen and (max-width: 503px) {
+  .slideshow-container .mySlides__text {
+    width: 45%;
+    font-size: 0.8rem; } }
 
 /* Footer */
 .footer {
