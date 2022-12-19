@@ -11,7 +11,6 @@ html {
   box-sizing: border-box; }
 
 body {
-  background-color: #f8f9fa;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.6; }
@@ -199,6 +198,8 @@ input[type="checkbox"] {
   .hamburger {
     display: block;
     padding: 0 24px; }
+  .hamburger.active {
+    background-color: #ffffff; }
   .hamburger.active .bar:nth-child(2) {
     opacity: 0; }
   .hamburger.active .bar:nth-child(1) {
@@ -331,6 +332,11 @@ input[type="checkbox"] {
   letter-spacing: 3px;
   padding-bottom: 2rem; }
 
+.heading-medium {
+  font-size: 1.4rem;
+  letter-spacing: 1.1px;
+  padding: 1; }
+
 .paragraph,
 .paragraph__mandate {
   text-align: left;
@@ -342,7 +348,7 @@ input[type="checkbox"] {
   padding: 1rem 4rem; }
 
 .paragraph__mandate {
-  padding: 1px 4rem; }
+  padding: 1px 2rem; }
 
 .unveil,
 .mandate,
@@ -1336,3 +1342,111 @@ input[type="checkbox"] {
     opacity: 0;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
     transition: .3s; }
+
+.Main {
+  height: 70vh; }
+  .Main img {
+    width: 100%;
+    height: 100%; }
+
+.Approach {
+  height: 125vh;
+  text-align: center;
+  padding: 3rem 4rem; }
+  .Approach i {
+    font-size: 0.7rem;
+    color: #f3c807;
+    padding-right: 5px; }
+  .Approach ul {
+    list-style: none; }
+  .Approach li {
+    padding-bottom: 1rem; }
+
+.Programmes,
+.Governance {
+  text-align: center;
+  height: auto;
+  padding: 3rem 4rem 5rem; }
+
+.Prog {
+  background-image: url(../Images/Burmayo-Gunana2.JPG);
+  background-size: cover;
+  transform: skewY(-6deg);
+  margin-top: 3rem;
+  height: 80vh; }
+
+.Prog > * {
+  transform: skewY(6deg); }
+
+.Resilience {
+  height: auto;
+  padding: 14rem 4rem 4rem;
+  margin-top: -6rem; }
+
+.Governance {
+  text-align: left; }
+  .Governance p {
+    padding-left: 0.5rem;
+    font-size: 1rem; }
+  .Governance h3 {
+    padding-left: 0.5rem; }
+  .Governance ul {
+    list-style: none; }
+  .Governance i {
+    font-size: 0.4rem;
+    color: #f3c807;
+    padding-left: 4px; }
+
+.SectionData {
+  display: flex;
+  margin-bottom: 2rem;
+  height: auto;
+  gap: 1rem; }
+
+.SectionLeft,
+.SectionRight {
+  padding-top: 1rem;
+  height: auto;
+  box-shadow: 1px 1px 3px black; }
+
+.SectionLeft {
+  width: 48%; }
+
+.SectionRight {
+  flex: 1;
+  height: auto; }
+
+@media (max-width: 900px) {
+  .SectionData {
+    flex-direction: column; }
+  .SectionLeft {
+    width: 100%; } }
+
+@media (max-width: 800px) {
+  .Programmes,
+  .Governance {
+    padding: 3rem 2rem; }
+  .Resilience {
+    padding: 12rem 2rem 4rem; } }
+
+@media (max-width: 1000px) {
+  .Approach {
+    padding: 3rem;
+    height: 140vh; } }
+
+@media (max-width: 900px) {
+  .Approach {
+    padding: 3rem;
+    height: auto; } }
+
+@media (max-width: 700px) {
+  .Approach {
+    padding: 3rem 2rem; } }
+
+@media (max-width: 600px) {
+  .Approach {
+    padding: 2rem 1rem; } }
+
+@media (max-width: 600px) {
+  .Approach {
+    padding: 2rem 1rem; } }

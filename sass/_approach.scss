@@ -1,0 +1,162 @@
+.Main {
+  height: 70vh;
+  //   background-color: bisque;
+  //   background-image: url("../Images/Burmayo-Gunana3.JPG");
+  //   background-position: bottom;
+  //   background-size: center;
+  //   background-repeat: no-repeat;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.Approach {
+  height: 125vh;
+  text-align: center;
+  padding: 3rem 4rem;
+
+  i {
+    font-size: 0.7rem;
+    color: #f3c807;
+    // display: block;
+    padding-right: 5px;
+  }
+
+  ul {
+    list-style: none;
+  }
+  li {
+    padding-bottom: 1rem;
+  }
+}
+
+////////////////////////////////////          PROGRAMMES .HTML                       //////////////////////////////////////////
+.Programmes,
+.Governance {
+  text-align: center;
+  height: auto;
+  //   background-color: #f3c807;
+  padding: 3rem 4rem 5rem;
+}
+.Programmes {
+  //   background-color: rgb(222, 194, 231);
+}
+.Prog {
+  //   padding: 10rem 4rem;
+  background-image: url(../Images/Burmayo-Gunana2.JPG);
+  background-size: cover;
+  transform: skewY(-6deg);
+  //   margin-top: -10rem;
+  margin-top: 3rem;
+  height: 80vh;
+}
+
+.Prog > * {
+  transform: skewY(6deg);
+}
+
+.Resilience {
+  //   background-color: #929086;
+  height: auto;
+  padding: 14rem 4rem 4rem;
+  margin-top: -6rem;
+}
+
+.Governance {
+  text-align: left;
+  p {
+    padding-left: 0.5rem;
+    font-size: 1rem;
+  }
+  h3 {
+    padding-left: 0.5rem;
+  }
+  ul {
+    list-style: none;
+  }
+  i {
+    font-size: 0.4rem;
+    color: #f3c807;
+    padding-left: 4px;
+  }
+}
+
+.SectionData {
+  display: flex;
+  margin-bottom: 2rem;
+  height: auto;
+
+  gap: 1rem;
+}
+.SectionLeft,
+.SectionRight {
+  padding-top: 1rem;
+
+  height: auto;
+
+  box-shadow: 1px 1px 3px black;
+}
+
+.SectionLeft {
+  width: 48%;
+}
+.SectionRight {
+  flex: 1;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .SectionData {
+    flex-direction: column;
+  }
+  .SectionLeft {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .Programmes,
+  .Governance {
+    padding: 3rem 2rem;
+  }
+
+  .Resilience {
+    padding: 12rem 2rem 4rem;
+  }
+}
+
+// /////////////////////////////////////////////////////////////////
+
+@media (max-width: 1000px) {
+  .Approach {
+    padding: 3rem;
+    height: 140vh;
+  }
+}
+
+@media (max-width: 900px) {
+  .Approach {
+    padding: 3rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .Approach {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .Approach {
+    padding: 2rem 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .Approach {
+    padding: 2rem 1rem;
+  }
+}
+
+// ////////////////

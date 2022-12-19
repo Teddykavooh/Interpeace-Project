@@ -401,6 +401,11 @@ $gradient: #00b5f5;
   .hamburger {
     display: block;
     padding: 0 24px;
+    // background-color: #f3c807;
+  }
+
+  .hamburger.active {
+    background-color: #ffffff;
   }
 
   .hamburger.active .bar:nth-child(2) {

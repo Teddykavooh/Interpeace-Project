@@ -136,6 +136,12 @@ $scroll-marg-size: 18.5vh;
   // padding-bottom: 1rem;
 }
 
+.heading-medium {
+  font-size: 1.4rem;
+  letter-spacing: 1.1px;
+  padding: 1;
+}
+
 .paragraph,
 .paragraph__mandate {
   text-align: left;
@@ -148,7 +154,7 @@ $scroll-marg-size: 18.5vh;
 }
 
 .paragraph__mandate {
-  padding: 1px 4rem;
+  padding: 1px 2rem;
 }
 
 // h1,
