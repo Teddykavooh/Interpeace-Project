@@ -350,21 +350,20 @@ input[type="checkbox"] {
 .vision,
 .mission,
 .partners {
-  scroll-margin-top: 18.5vh;
-  padding: 20px; }
+  scroll-margin-top: 18.5vh; }
 
 .unveil {
-  height: 150vh;
+  height: auto;
   padding: 4rem;
   text-align: center;
   font-size: 1.1rem;
   background-color: #e3f3f3;
-  clip-path: polygon(0 0, 100% 0, 100% 130vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   z-index: 20; }
 
 .mandate {
   z-index: 10;
-  height: 130vh;
+  height: auto;
   padding: 5rem 4rem;
   text-align: center;
   font-size: 1.1rem; }
@@ -947,12 +946,11 @@ input[type="checkbox"] {
       width: 100%;
       height: 100%; }
     .slideshow-container .mySlides__text {
-      background-color: black;
-      opacity: 0.7;
-      border-radius: 0.8rem;
+      background-color: #0065BD;
+      opacity: 0.8;
       position: absolute;
-      right: 2%;
-      bottom: 10%;
+      right: 38%;
+      bottom: 5%;
       width: 25%;
       height: auto;
       margin: auto;

@@ -171,20 +171,20 @@ $scroll-marg-size: 18.5vh;
 .mission,
 .partners {
   scroll-margin-top: $scroll-marg-size;
-  padding: 20px;
+  // padding: 20px;
   // p {
   //   padding: 10px;
   // }
 }
 
 .unveil {
-  height: 150vh;
+  height: auto;
   padding: 4rem;
   text-align: center;
   font-size: 1.1rem;
   background-color: rgb(227, 243, 243);
 
-  clip-path: polygon(0 0, 100% 0, 100% 130vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   z-index: 20;
 }
 
@@ -192,7 +192,7 @@ $scroll-marg-size: 18.5vh;
   // margin-top: -20vh;
 
   z-index: 10;
-  height: 130vh;
+  height: auto;
   padding: 5rem 4rem;
   text-align: center;
   font-size: 1.1rem;
