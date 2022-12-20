@@ -195,15 +195,15 @@ $scroll-marg-size: 18.5vh;
 }
 
 .mandate {
-  // margin-top: -20vh;
-
   z-index: 10;
   height: auto;
   padding: 5rem 4rem;
   text-align: center;
   font-size: 1.1rem;
-  // background-color: rgb(192, 143, 37);
-  // clip-path: polygon(0 0, 100% 0, 100% 130vh, 0 100%);
+}
+
+.mandate li {
+  list-style: none;
 }
 
 .values {
@@ -248,18 +248,6 @@ $scroll-marg-size: 18.5vh;
 .Values__details {
   display: flex;
   background-color: blanchedalmond;
-}
-
-.mandate span {
-  color: rgb(212, 199, 8);
-  font-size: 1.2rem;
-  height: 20px;
-
-  width: 20px;
-  padding-right: 1rem;
-}
-.mandate li {
-  list-style: none;
 }
 
 .struc {
@@ -623,6 +611,10 @@ $scroll-marg-size: 18.5vh;
     padding: 4rem 2rem;
   }
 
+  .mandate {
+    padding: 4rem 2rem;
+  }
+
   .ImageOne,
   .ImageTwo {
     flex-direction: column;
@@ -951,6 +943,9 @@ $scroll-marg-size: 18.5vh;
 @media (max-width: 450px) {
   .HomepageImages {
     clip-path: polygon(0 7vh, 100% 0, 100% 100%, 0 100%);
+  }
+  .mandate {
+    padding: 3rem 1rem;
   }
 
   .intro__dataOne {

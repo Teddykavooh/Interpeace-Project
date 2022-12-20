@@ -373,6 +373,9 @@ input[type="checkbox"] {
   text-align: center;
   font-size: 1.1rem; }
 
+.mandate li {
+  list-style: none; }
+
 .values {
   clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   min-height: 135vh;
@@ -389,16 +392,6 @@ input[type="checkbox"] {
 .Values__details {
   display: flex;
   background-color: blanchedalmond; }
-
-.mandate span {
-  color: #d4c708;
-  font-size: 1.2rem;
-  height: 20px;
-  width: 20px;
-  padding-right: 1rem; }
-
-.mandate li {
-  list-style: none; }
 
 .struc {
   height: 70vh;
@@ -649,6 +642,8 @@ input[type="checkbox"] {
   .intro {
     height: 255vh;
     padding: 4rem 2rem; }
+  .mandate {
+    padding: 4rem 2rem; }
   .ImageOne,
   .ImageTwo {
     flex-direction: column;
@@ -825,6 +820,8 @@ input[type="checkbox"] {
 @media (max-width: 450px) {
   .HomepageImages {
     clip-path: polygon(0 7vh, 100% 0, 100% 100%, 0 100%); }
+  .mandate {
+    padding: 3rem 1rem; }
   .intro__dataOne {
     min-height: 128vh; }
   .intro {
@@ -1415,10 +1412,12 @@ input[type="checkbox"] {
     padding-left: 0.5rem; }
   .Governance ul {
     list-style: none; }
-  .Governance i {
-    font-size: 0.4rem;
-    color: #f3c807;
-    padding-left: 4px; }
+
+.mandate i,
+.Governance i {
+  font-size: 0.4rem;
+  color: #f3c807;
+  padding-right: 5px; }
 
 .SectionData {
   display: flex;
