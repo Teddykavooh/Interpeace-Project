@@ -1230,19 +1230,23 @@ input[type="checkbox"] {
   .cards-f {
     justify-content: space-between;
     flex-direction: column;
-    align-items: center;
     width: 100%; }
     .cards-f li a {
       text-decoration: underline; }
     .cards-f__item {
       border: none;
       width: 100%;
-      margin: auto; }
+      display: flex;
+      text-align: center;
+      padding: 0; }
+      .cards-f__item ul {
+        width: inherit; }
     .cards-f .social-group {
-      max-width: inherit; }
+      width: auto; }
       .cards-f .social-group .social-icons-f {
         margin: 0; }
       .cards-f .social-group img {
+        margin: auto;
         width: 180px; }
       .cards-f .social-group img:hover {
         transform: none; } }

@@ -13,3 +13,8 @@
   * Initialize sass - `npm run compile:sass`
 * Site link:
   * *[NEPCOH](https://teddykavooh.github.io/Interpeace-Project/)*
+
+* Formating
+  * Formatter: `Prettier`
+  * Tab: `2 Spaces`
+  * Max-line: `80`
