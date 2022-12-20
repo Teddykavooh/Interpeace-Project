@@ -1,248 +1,257 @@
 /* Footer */
 .footer {
-  background-color: #002b5c;
-  padding: 1rem;
-  height: auto;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  color: white;
-  font-size: small;
+    background-color: #002b5c;
+    padding: 1rem;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    color: white;
+    font-size: small;
 
-  h3 {
-    color: #f2bd21;
-  }
+    h3 {
+        color: #f2bd21;
+        font-size: medium;
+    }
 }
 
 .footerB {
-  background-color: black;
-  height: auto;
-  text-align: center;
-  color: white;
-  display: flex;
+    background-color: black;
+    height: auto;
+    text-align: center;
+    color: white;
+    display: flex;
 
-  flex-direction: column;
-  padding: 1rem;
-  font-size: small;
+    flex-direction: column;
+    padding: 1rem;
+    font-size: small;
 
-  p {
-    margin: auto;
-  }
+    p {
+        margin: auto;
+    }
 }
 
 .cards-f {
-  //   background-color: #f2bd21;
-  display: flex;
-  gap: 3rem;
-  justify-content: space-around;
-  // width: 1200px;
-  margin: 3rem auto;
+    //   background-color: #f2bd21;
+    display: flex;
+    gap: 3rem;
+    justify-content: space-around;
+    // width: 1200px;
+    margin: 3rem auto;
 
-  ul {
-    list-style-type: none;
-    margin: auto;
-  }
-
-  li {
-    margin: 1rem;
-  }
-
-  a {
-    text-decoration: none;
-    color: white;
-  }
-
-  &__item {
-    border-right-style: solid;
-    border-right: 1px, white;
-    padding-right: 5vw;
-  }
-
-  &__item_n {
-    border: none;
-  }
-
-  .blah a:hover {
-    transform: scale(1.5);
-    color: #f2bd21;
-    background-color: #006b38;
-    text-decoration: underline;
-    font-size: medium;
-    transition: 500ms;
-  }
-
-  .button {
-    pointer-events: auto;
-    cursor: pointer;
-    background: #e7e7e7;
-    border: none;
-    padding: 0.8rem;
-    margin: 1rem 0rem;
-    font-family: inherit;
-    font-size: inherit;
-    position: relative;
-    display: inline-block;
-    height: auto;
-    width: auto;
-  }
-
-  .button::before,
-  .button::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .button--anthe {
-    font-family: bely-display, sans-serif;
-    color: #fff;
-    background: none;
-  }
-
-  .button--anthe::before {
-    content: "";
-    background: #000;
-    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
-    clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
-    transition: clip-path 0.4s cubic-bezier(0.2, 1, 0.8, 1),
-      -webkit-clip-path 0.4s cubic-bezier(0.2, 1, 0.8, 1);
-  }
-
-  .button--anthe:hover::before {
-    background: #000;
-    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-  }
-
-  .button--anthe span {
-    display: block;
-    mix-blend-mode: difference;
-    transition: transform 0.4s cubic-bezier(0.2, 1, 0.8, 1);
-  }
-
-  .button--anthe:hover span {
-    transform: translate3d(-10px, 0, 0);
-  }
-}
-
-.social-group {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-
-  img {
-    margin: 0.15em;
-    position: relative;
-    height: 100px;
-    width: 98%;
-  }
-
-  img:hover {
-    transform: scale(0.9);
-  }
-
-  /* Social Media Buttons */
-  .social-icons-f {
-    list-style: none;
-    // width: auto;
-    margin: auto;
-    // background-color: rgb(248, 177, 177);
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: flex-end;
-
-    li {
-      display: inline-block;
-      margin: 0.15em;
-      position: relative;
-      font-size: 1.2em;
-      // background-color: #000;
+    ul {
+        list-style-type: none;
+        margin: auto;
     }
 
-    i {
-      color: #1977bf;
-      position: absolute;
-      // width: 40px;
-      // height: 40px;
-      top: 12px;
-      left: 12px;
-      transition: all $timing ease-out;
+    li {
+        margin: 1rem;
     }
 
     a {
-      display: inline-block;
-
-      &:before {
-        @include transformScale();
-        content: " ";
-        width: 40px;
-        height: 40px;
-        // border-radius: 100%;
-        display: block;
-        // background: linear-gradient(45deg, $iconColor, $accent);
-        // background: linear-gradient(45deg, #788CB6, #FDB813);
-        background-color: ivory;
-        transition: all $timing ease-out;
-      }
-
-      &:hover:before {
-        transform: scale(0);
-        transition: all $timing ease-in;
-      }
-
-      &:hover i {
-        @include transformScale(2);
-        color: $iconColor;
-        // background: -webkit-linear-gradient(45deg, $iconColor, $accent);
-        background-color: white;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        transition: all $timing ease-in;
-      }
+        text-decoration: none;
+        color: white;
     }
-  }
+
+    &__item {
+        border-right-style: solid;
+        border-right: 1px, white;
+        padding-right: 5vw;
+        // background-color: olivedrab;
+    }
+
+    .n {
+        border: none;
+    }
+
+    .blah a:hover {
+        transform: scale(1.5);
+        color: #f2bd21;
+        background-color: #006b38;
+        text-decoration: underline;
+        font-size: medium;
+        transition: 500ms;
+    }
+
+    .button {
+        pointer-events: auto;
+        cursor: pointer;
+        background: #e7e7e7;
+        border: none;
+        padding: 0.8rem;
+        margin: 1rem 0rem;
+        font-family: inherit;
+        font-size: inherit;
+        position: relative;
+        display: inline-block;
+        height: auto;
+        width: auto;
+    }
+
+    .button::before,
+    .button::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .button--anthe {
+        font-family: bely-display, sans-serif;
+        color: #fff;
+        background: none;
+    }
+
+    .button--anthe::before {
+        content: "";
+        background: #000;
+        -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+        clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+        transition: clip-path 0.4s cubic-bezier(0.2, 1, 0.8, 1),
+            -webkit-clip-path 0.4s cubic-bezier(0.2, 1, 0.8, 1);
+    }
+
+    .button--anthe:hover::before {
+        background: #000;
+        -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    }
+
+    .button--anthe span {
+        display: block;
+        mix-blend-mode: difference;
+        transition: transform 0.4s cubic-bezier(0.2, 1, 0.8, 1);
+    }
+
+    .button--anthe:hover span {
+        transform: translate3d(-10px, 0, 0);
+    }
+}
+
+.social-group {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    img {
+        margin: 0.15em;
+        position: relative;
+        height: 100px;
+        width: 98%;
+        border-radius: 5px;
+    }
+
+    img:hover {
+        transform: scale(0.9);
+    }
+
+    /* Social Media Buttons */
+    .social-icons-f {
+        list-style: none;
+        // width: auto;
+        // margin: auto;
+        // background-color: rgb(248, 177, 177);
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: flex-end;
+
+        li {
+            display: inline-block;
+            margin: 0.15em;
+            position: relative;
+            font-size: 1.2em;
+            // background-color: #000;
+        }
+
+        i {
+            color: #1977bf;
+            position: absolute;
+            // width: 40px;
+            // height: 40px;
+            top: 12px;
+            left: 12px;
+            transition: all $timing ease-out;
+        }
+
+        a {
+            display: inline-block;
+
+            &:before {
+                @include transformScale();
+                content: " ";
+                width: 40px;
+                height: 40px;
+                // border-radius: 100%;
+                display: block;
+                // background: linear-gradient(45deg, $iconColor, $accent);
+                // background: linear-gradient(45deg, #788CB6, #FDB813);
+                background-color: ivory;
+                transition: all $timing ease-out;
+            }
+
+            &:hover:before {
+                transform: scale(0);
+                transition: all $timing ease-in;
+            }
+
+            &:hover i {
+                @include transformScale(2);
+                color: $iconColor;
+                // background: -webkit-linear-gradient(45deg, $iconColor, $accent);
+                background-color: white;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transition: all $timing ease-in;
+            }
+        }
+    }
 }
 
 /*Media Queries*/
 @media screen and (max-width: 850px) {
-  .cards-f {
-    gap: 0.5rem;
-  }
+    .cards-f {
+        gap: 0.5rem;
+    }
 }
 
 @media screen and (max-width: 775px) {
-  .cards-f {
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    .cards-f {
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
 
-    li a {
-      text-decoration: underline;
+        li a {
+            text-decoration: underline;
+        }
+
+        &__item {
+            border: none;
+            // background-color: olivedrab;
+            width: 100%;
+            margin: auto;
+        }
+
+        .social-group {
+            // margin: auto;
+            max-width: inherit;
+
+            .social-icons-f {
+                margin: 0;
+            }
+
+            img {
+                // margin: auto;
+                background-color: #000;
+                max-width: 60%;
+                max-height: 100px;
+            }
+
+            img:hover {
+                transform: none;
+            }
+        }
     }
-
-    &__item {
-      border: none;
-      // margin: auto;
-    }
-
-    .social-group {
-      margin: auto;
-      max-width: inherit;
-
-      img {
-        // margin: auto;
-        background-color: #000;
-        max-width: inherit;
-        max-height: 100px;
-      }
-
-      img:hover {
-        transform: none;
-      }
-    }
-  }
 }
