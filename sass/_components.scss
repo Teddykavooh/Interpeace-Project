@@ -578,7 +578,7 @@ $scroll-marg-size: 18.5vh;
   .intro__dataOne {
     min-height: 100vh;
 
-    border: 0.3px solid #faeee0;
+    border: 0.4px solid #faeee0;
 
     flex-direction: column;
   }
@@ -762,6 +762,13 @@ $scroll-marg-size: 18.5vh;
   .intro__dataTwo--imageTwo {
     height: 50vh;
   }
+
+  // .heading-primary {
+  //   text-shadow: none;
+  //   letter-spacing: 3px;
+  //   font-size: 2rem;
+  //   padding-bottom: 4rem;
+  // }
 
   .introObjetives {
     clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0 100%);

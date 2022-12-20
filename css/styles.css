@@ -622,7 +622,7 @@ input[type="checkbox"] {
     border: 0.3px solid #faeee0; }
   .intro__dataOne {
     min-height: 100vh;
-    border: 0.3px solid #faeee0;
+    border: 0.4px solid #faeee0;
     flex-direction: column; }
   .intro__dataOne--imageOne,
   .intro__dataTwo--imageTwo {
@@ -1410,11 +1410,19 @@ input[type="checkbox"] {
     font-size: 1rem; }
   .Governance h3 {
     padding-left: 0.5rem; }
-  .Governance ul {
-    list-style: none; }
+
+.mandate ul,
+.Governance ul,
+.StrategicOne ul,
+.StrategicTwo ul,
+.StrategicThree ul {
+  list-style: none; }
 
 .mandate i,
-.Governance i {
+.Governance i,
+.StrategicOne i,
+.StrategicTwo i,
+.StrategicThree i {
   font-size: 0.4rem;
   color: #f3c807;
   padding-right: 5px; }
@@ -1468,16 +1476,6 @@ input[type="checkbox"] {
   .Prog > * {
     transform: skewY(4deg); } }
 
-@media (max-width: 1000px) {
-  .Approach {
-    padding: 3rem;
-    height: 140vh; } }
-
-@media (max-width: 900px) {
-  .Approach {
-    padding: 3rem 2rem;
-    height: auto; } }
-
 @media (max-width: 700px) {
   .Approach {
     padding: 3rem 2rem; } }
@@ -1489,3 +1487,99 @@ input[type="checkbox"] {
 @media (max-width: 600px) {
   .Approach {
     padding: 2rem 1rem; } }
+
+.Partners {
+  padding: 4rem 4rem;
+  text-align: center; }
+  .Partners h3 {
+    padding-bottom: 2rem; }
+
+.Strategic__partners {
+  padding: 4rem; }
+
+.StrategicOne,
+.StrategicTwo,
+.StrategicThree {
+  padding: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  border: 0.3px solid #faeee0;
+  border-radius: 1rem;
+  margin-bottom: 1rem; }
+  .StrategicOne img,
+  .StrategicTwo img,
+  .StrategicThree img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem; }
+
+.Strategic__left {
+  width: 40%; }
+
+.Strategic__right {
+  flex: 1; }
+
+@media (max-width: 1000px) {
+  .Approach {
+    padding: 3rem;
+    height: 140vh; }
+  .Partners h3 {
+    padding-bottom: 2rem; }
+  .StrategicTwo {
+    flex-direction: column; }
+  .StrategicTwo .Strategic__left {
+    height: 40vh;
+    width: 100%; }
+  .StrategicTwo .Strategic__right {
+    width: 100%;
+    padding-left: 3rem; }
+  .Strategic__partners {
+    padding: 4rem 3rem; } }
+
+@media (max-width: 900px) {
+  .Approach {
+    padding: 3rem 2rem;
+    height: auto; }
+  .Partners {
+    padding: 4rem 2rem; }
+  .Strategic__partners {
+    padding: 3rem 2rem; }
+  .StrategicOne,
+  .StrategicThree {
+    flex-direction: column; }
+  .StrategicTwo .Strategic__right {
+    padding-left: 0rem; }
+  .Strategic__right {
+    width: 100%;
+    padding-top: 1rem; }
+  .Strategic__left {
+    background-color: #e2e1dc;
+    height: 40vh;
+    width: 100%; } }
+
+@media (max-width: 800px) {
+  .Partners {
+    padding: 3rem 2rem; }
+    .Partners h3 {
+      font-size: 2.4rem;
+      text-shadow: none; }
+  .Strategic__partners {
+    padding: 3rem 1rem; } }
+
+@media (max-width: 700px) {
+  .Partners {
+    padding: 3rem 1rem; }
+    .Partners h3 {
+      font-size: 2rem; } }
+
+@media (max-width: 500px) {
+  .Partners {
+    padding: 2rem 1rem; }
+    .Partners h3 {
+      font-size: 1.9rem; }
+  .Strategic__partners {
+    padding: 2rem 1rem; }
+  .StrategicOne,
+  .StrategicTwo,
+  .StrategicThree {
+    padding: 1rem 0rem; } }
