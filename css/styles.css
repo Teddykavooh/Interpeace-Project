@@ -1243,9 +1243,7 @@ input[type="checkbox"] {
       .cards-f .social-group .social-icons-f {
         margin: 0; }
       .cards-f .social-group img {
-        background-color: #000;
-        max-width: 60%;
-        max-height: 100px; }
+        width: 180px; }
       .cards-f .social-group img:hover {
         transform: none; } }
 
