@@ -108,21 +108,46 @@
 }
 
 @media (max-width: 900px) {
+  .Programmes,
+  .Governance {
+    padding: 3rem 2rem;
+  }
+  .Resilience {
+    padding: 12rem 2rem 4rem;
+  }
+  .Prog {
+    height: 60vh;
+  }
   .SectionData {
     flex-direction: column;
   }
   .SectionLeft {
     width: 100%;
+    background-color: #f9f9fd;
+  }
+  .SectionRight {
+    background-color: #f9f9fd;
   }
 }
-@media (max-width: 800px) {
+
+@media (max-width: 500px) {
+  .Main {
+    height: 60vh;
+  }
   .Programmes,
   .Governance {
-    padding: 3rem 2rem;
+    padding: 2.5rem 1rem;
+  }
+  .Resilience {
+    padding: 11rem 1rem 3rem;
+  }
+  .Prog {
+    height: 50vh;
+    transform: skewy(-4deg);
   }
 
-  .Resilience {
-    padding: 12rem 2rem 4rem;
+  .Prog > * {
+    transform: skewY(4deg);
   }
 }
 
@@ -137,7 +162,7 @@
 
 @media (max-width: 900px) {
   .Approach {
-    padding: 3rem;
+    padding: 3rem 2rem;
     height: auto;
   }
 }

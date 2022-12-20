@@ -550,7 +550,7 @@ $scroll-marg-size: 18.5vh;
   .HomepageImages {
     // clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0 100%);
 
-    padding: 11 rem 2rem 2rem;
+    padding: 11rem 2rem 2rem;
     // height: 110vh;
     gap: 0.5rem;
   }
@@ -710,7 +710,8 @@ $scroll-marg-size: 18.5vh;
     padding: 10rem 2rem 2rem;
     // height: 85vh;
   }
-  .paragraph {
+  .paragraph,
+  .paragraph__mandate {
     font-size: 1.05rem;
   }
   .operations {
@@ -739,7 +740,8 @@ $scroll-marg-size: 18.5vh;
     // background-color: #10f57f;
   }
 
-  .paragraph {
+  .paragraph,
+  .paragraph__mandate {
     padding: 1rem;
   }
 
@@ -1036,7 +1038,8 @@ $scroll-marg-size: 18.5vh;
     font-size: 1.5rem;
   }
 
-  .paragraph {
+  .paragraph,
+  .paragraph__mandate {
     font-size: 0.9rem;
   }
   .operations {
