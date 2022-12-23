@@ -11,7 +11,7 @@
 * After project cloning:
   * Install required dependancies - `npm install`
   * Initialize sass - `npm run compile:sass`
-* Site link:
+* Site links:
   * gitpages: *[NEPCOH](https://teddykavooh.github.io/Interpeace-Project/)*
   * heroku: *[NEPCOH](https://nepcoh.herokuapp.com/)*
 
