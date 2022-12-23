@@ -15,7 +15,7 @@
   * gitpages: *[NEPCOH](https://teddykavooh.github.io/Interpeace-Project/)*
   * heroku: *[NEPCOH](https://nepcoh.herokuapp.com/)*
 
-* Formating
+* Formating:
   * Formatter: `Prettier`
   * Tab: `2 Spaces`
   * Max-line: `80`
