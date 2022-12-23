@@ -13,7 +13,7 @@
   * Initialize sass - `npm run compile:sass`
 * Site link:
   * gitpages: *[NEPCOH](https://teddykavooh.github.io/Interpeace-Project/)*
-  * heroku: *[NEPCOH](https://nepcoh.herokuapp.com/)
+  * heroku: *[NEPCOH](https://nepcoh.herokuapp.com/)*
 
 * Formating
   * Formatter: `Prettier`
